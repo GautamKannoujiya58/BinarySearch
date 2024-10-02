@@ -6,7 +6,7 @@
 
 ### 2. Binary Search on reverse Sorted array
 
-### 3. Order not known search
+### 3. Order not known search / order Agnostic search
 
 ### 4. First and last occurrence of an Element
 

@@ -1,18 +1,38 @@
 console.log("Hello world");
-function binarySearch(arr, targetElmt) {
-  let len = arr.length;
-  let start = 0;
-  let end = len - 1;
+// Using while loop
+// function binarySearch(arr, targetElmt) {
+//   let len = arr.length;
+//   let start = 0;
+//   let end = len - 1;
 
-  while (start <= end) {
-    let mid = start + Math.floor((end - start) / 2);
-    if (targetElmt === arr[mid]) {
-      return mid;
+//   while (start <= end) {
+//     let mid = start + Math.floor((end - start) / 2);
+//     if (targetElmt === arr[mid]) {
+//       return mid;
+//     }
+//     if (targetElmt < arr[mid]) {
+//       end = mid - 1;
+//     } else {
+//       start = mid + 1;
+//     }
+//   }
+//   return -1;
+// }
+
+// Using for loop
+console.log("Hello world");
+function binarySearch(arr, targetElmt) {
+  let leftIndex = 0;
+  let rightIndex = arr.length - 1;
+  for (let i = 0; i < arr.length; i++) {
+    let midIndex = leftIndex + Math.floor((rightIndex - leftIndex) / 2);
+    if (targetElmt === arr[midIndex]) {
+      return midIndex;
     }
-    if (targetElmt < arr[mid]) {
-      end = mid - 1;
+    if (targetElmt < arr[midIndex]) {
+      rightIndex = midIndex - 1;
     } else {
-      start = mid + 1;
+      leftIndex = midIndex + 1;
     }
   }
   return -1;

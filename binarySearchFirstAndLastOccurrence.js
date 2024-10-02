@@ -1,4 +1,5 @@
 console.log("First and last occurrence of an Element");
+
 // First Occurrence
 function binarySearchFirstOccurrence(arr, targetElmt) {
   let leftIndex = 0;
@@ -21,6 +22,7 @@ function binarySearchFirstOccurrence(arr, targetElmt) {
 console.log(binarySearchFirstOccurrence([1, 2, 2, 2, 3, 4, 5, 6], 2)); // 1
 console.log(binarySearchFirstOccurrence([1, 3, 5, 7, 9], 4)); // -1
 console.log(binarySearchFirstOccurrence([10], 10)); // 0
+console.log(binarySearchFirstOccurrence([1, 3, 3, 3, 3, 5, 6, 7], 3)); // 1
 
 // Last occurrence
 function binarySearchLastOccurrence(arr, targetElmt) {
@@ -45,3 +47,4 @@ console.log(binarySearchLastOccurrence([1, 2, 2, 2, 3, 4, 5, 6], 2)); // 3
 console.log(binarySearchLastOccurrence([1, 3, 5, 7, 9], 4)); // -1
 console.log(binarySearchLastOccurrence([10], 10)); // 0
 console.log(binarySearchLastOccurrence([1, 2, 2, 2, 3], 2)); // 3
+console.log(binarySearchLastOccurrence([1, 3, 3, 3, 3, 5, 6, 7], 3)); // 4
